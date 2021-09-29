@@ -1,6 +1,6 @@
 
 
-Plain tiny Url generator for prefilled email template combining forms, mailto: and tinyUrl.
+Plain tiny Url generator for prefilled email template combining forms, mailto: and tinyUrl API.
 
 
 # Getting Started with Create React App
