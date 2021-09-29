@@ -4,13 +4,7 @@ import buildString from "./buildString";
 import makeTiny from "./makeTiny";
 
 const Form = ({ setTinyResult }) => {
-  const [formData, setFormData] = useState({
-    to: "jon@test.com",
-    cc: "cc@ccuser.com",
-    bcc: "bcc@bccuser.com",
-    subject: "this is the subject line",
-    body: "this is the body of the text",
-  });
+  const [formData, setFormData] = useState({});
 
   const handleChange = (evt) => {
     const { name, value } = evt.target;
@@ -36,31 +30,48 @@ const Form = ({ setTinyResult }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div id="a">
           <label htmlFor="to">To: </label>
-          <input name="to" value={formData.to} onChange={handleChange} />
+          <input
+            name="to"
+            value={formData.to}
+            placeholder="..."
+            onChange={handleChange}
+          />
         </div>
-        <div>
+        <div id="b">
           <label htmlFor="cc">CC: </label>
-          <input name="cc" value={formData.cc} onChange={handleChange} />
+          <input
+            name="cc"
+            value={formData.cc}
+            placeholder="..."
+            onChange={handleChange}
+          />
         </div>
-        <div>
+        <div id="c">
           <label htmlFor="bcc">BCC: </label>
-          <input name="bcc" value={formData.bcc} onChange={handleChange} />
+          <input
+            name="bcc"
+            value={formData.bcc}
+            placeholder="..."
+            onChange={handleChange}
+          />
         </div>
-        <div>
+        <div id="d">
           <label htmlFor="subject">Subject: </label>
           <input
             name="subject"
             value={formData.subject}
+            placeholder="..."
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="body">Body: </label>
+        <div id="e">
+          {/* <label htmlFor="body">Body: </label> */}
           <textarea
             name="body"
             value={formData.body}
+            placeholder="..."
             onChange={handleChange}
             rows="10"
             cols="50"
@@ -71,6 +82,5 @@ const Form = ({ setTinyResult }) => {
     </div>
   );
 };
-// end
 
 export default Form;

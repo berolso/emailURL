@@ -1,7 +1,11 @@
 body {
-  background-color: rgb(245, 245, 245);
-  color: rgb(97, 93, 88);
+  background: rgb(90,80,80);
+  background: no-repeat linear-gradient(0deg, rgba(90,80,80,1) 20%, rgba(84,122,130,1) 45%, rgba(62,172,168,1) 60%, rgba(162,212,171,1) 75%, rgba(229,238,193,1) 90%);
+  background-size: 100%;
   margin: 0;
+  background-size: cover;
+  height: 120vh;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

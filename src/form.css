@@ -1,25 +1,115 @@
 
+
+
+  #header{
+    /* display: block; */
+    /* position: relative; */
+    margin: auto;
+  }
+
+  h1{
+    color: rgba(90,80,80,1);
+    /* text-shadow: 3px 3px 25px #181818bb; */
+    font: 2em 'Helvetica' ‘Display’;
+    position: absolute;
+    top:0;
+    left:1%;
+  }
+
+  h1::before {
+    text-align: center;
+    position:absolute;
+	  top:9px;
+	  left:0;
+    content: attr(text);
+    font-family:'Helvetica' 1.5em;
+    color:rgba(62,172,168,1);
+    mix-blend-mode:screen;
+   }
+
+   h1::after {
+    position:absolute;
+    top:14px;
+    left:0;
+    content: attr(text);
+    font-family:'helvetica';
+    color: rgb(184, 209, 189);
+    mix-blend-mode:color-burn;
+   }
+
   form {
     text-align: center;
     margin: auto;
+    margin-top: 50px;
+    box-shadow: 7px 10px 70px #181818bb;
+    width: 75%;
+    background-color:  rgba(90,80,80,1);    
+  }
+
+  #a  {
+    background-color: rgba(229,238,193,1);
+    padding: 30px;
+    color: rgba(90,80,80,1);
+  }
+
+  #a input{
+    mix-blend-mode:exclusion;
+  }
+
+  #b {
+    background-color: rgba(162,212,171,1);
+  }
+  #c {
+    background-color: rgba(62,172,168,1);
+  }
+  #d {
+    background-color: rgba(84,122,130,1);
+  }
+  #e {
+    background-color:  rgba(90,80,80,1);
   }
   button{
     margin: 10px;
     color: rgb(38, 126, 38);
   }
 
-  h1 {
-    text-align: center;
-  }
   a {
-    display:block;
+    /* display:block; */
     margin: 5px;
+    color: rgba(229,238,193,1)
   }
   input{
     width:auto;
     border: none;
+    background-color: transparent;
+    color: rgb(204, 134, 152);
+    mix-blend-mode:color-dodge;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: .9em;
+    padding: 3px;
   }
   textarea{
-    border: none
+    color: white;
+    border: none;
+    background-color: transparent;
+  }
+ 
+  label{
+    color:rgb(160, 121, 13);
+    mix-blend-mode:color-dodge;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
   }
 
+  #result{
+    background-color: transparent;
+    box-shadow: none;
+    animation: fadeIn ease-in-out 1.6s;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0; margin-top:-30px}
+    100% {opacity:1; margin-top:5px}
+  }
