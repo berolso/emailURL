@@ -10,7 +10,7 @@
   h1{
     color: rgba(90,80,80,1);
     /* text-shadow: 3px 3px 25px #181818bb; */
-    font: 2em 'Helvetica' ‘Display’;
+    /* font: 2em 'Helvetica' ‘Display’; */
     position: absolute;
     top:0;
     left:1%;
